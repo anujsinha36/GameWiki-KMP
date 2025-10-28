@@ -48,6 +48,8 @@ kotlin {
 
             implementation(projects.coreNetwork)
             implementation(projects.game.domain)
+
+            implementation(libs.koin.core)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)

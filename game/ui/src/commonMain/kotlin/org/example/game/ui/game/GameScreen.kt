@@ -66,7 +66,7 @@ fun GameScreenContent(
         modifier = modifier.fillMaxSize(),
         topBar = {
             TopAppBar(
-                title = { Text("Gamopedia") },
+                title = { Text("GameWiki") },
                 actions = {
                     IconButton(onClick = onSearchClick) {
                         Icon(imageVector = Icons.Filled.Search, contentDescription = "Search")

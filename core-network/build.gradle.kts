@@ -71,7 +71,7 @@ kotlin {
 }
 
 android {
-    namespace = "org.example.core-network"
+    namespace = "org.example.corenetwork"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
 
     defaultConfig {
@@ -102,7 +102,7 @@ compose.desktop {
     application {
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
-            packageName = "org.example.core-network"
+            packageName = "org.example.corenetwork"
             packageVersion = "1.0.0"
         }
     }

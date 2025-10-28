@@ -53,7 +53,7 @@ sql-delight-ios = { module = "app.cash.sqldelight:native-driver", version.ref = 
 sql-delight-desktop = { module = "app.cash.sqldelight:sqlite-driver", version.ref = "sqldelight" }
 
 kotlinx-serialization = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version = "1.8.0" }
-navigation-compose = { module = "org.jetbrains.androidx.navigation:navigation-compose", version = "2.7.0-alpha07" }
+navigation-compose = { module = "org.jetbrains.androidx.navigation:navigation-compose", version = "2.9.0" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

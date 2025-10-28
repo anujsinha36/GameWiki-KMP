@@ -21,7 +21,7 @@ object KtorClient {
         install(DefaultRequest){
             url{
                 host = "api.rawg.io"
-                protocol = URLProtocol.HTTP
+                protocol = URLProtocol.HTTPS
                 contentType(ContentType.Application.Json)  //Send data as JSON
                 accept(ContentType.Application.Json)        //Request and accept response in JSON
             }

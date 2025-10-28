@@ -8,6 +8,7 @@ plugins {
     alias(libs.plugins.composeMultiplatform)
     alias(libs.plugins.composeCompiler)
     alias(libs.plugins.composeHotReload)
+    alias(libs.plugins.kotlinx.serialization)
 }
 
 kotlin {
@@ -45,6 +46,26 @@ kotlin {
             implementation(compose.components.uiToolingPreview)
             implementation(libs.androidx.lifecycle.viewmodelCompose)
             implementation(libs.androidx.lifecycle.runtimeCompose)
+            implementation(libs.kotlinx.serialization)
+
+            implementation(libs.koin.core)
+
+            implementation(projects.coreNetwork)
+            implementation(projects.coreDatabase)
+
+            implementation(projects.game.domain)
+            implementation(projects.game.data)
+            implementation(projects.game.ui)
+
+            implementation(projects.favourite.ui)
+            implementation(projects.favourite.domain)
+            implementation(projects.favourite.data)
+
+            implementation(projects.search.ui)
+            implementation(projects.search.domain)
+            implementation(projects.search.data)
+
+            implementation(libs.navigation.compose)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
